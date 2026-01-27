@@ -13,10 +13,10 @@ export default function SolutionPage() {
                     transition={{ duration: 0.6 }}
                 >
                     <span className="inline-block py-1 px-3 rounded-full bg-slate-200 text-slate-600 text-xs font-bold uppercase tracking-wider mb-4">
-                        Retrospective 2025 &rarr; 2026
+                        复盘与展望 2025 &rarr; 2026
                     </span>
                     <h1 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">
-                        From Chaos to Contract
+                        从“无序”到“契约”
                     </h1>
                     <p className="text-slate-600 text-lg">
                         针对前后端协作痛点的复盘与提案

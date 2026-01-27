@@ -34,10 +34,10 @@ export default function Home() {
       <div className="max-w-4xl w-full">
         <header className="mb-12 text-center">
           <h1 className="text-4xl font-black text-neutral-900 mb-4 tracking-tight">
-            2025 YEAR-END SUMMARY
+            2025 年度总结报告
           </h1>
           <p className="text-neutral-500 text-lg">
-            Frontend Developer Review // Ding Minghui
+            前端开发工程师复盘 // 丁明辉
           </p>
         </header>
 
@@ -60,7 +60,7 @@ export default function Home() {
               </div>
 
               <div className="flex items-center text-sm font-semibold text-neutral-400 group-hover:text-neutral-900 transition-colors mt-4">
-                View Page <ArrowRight className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
+                查看详情 <ArrowRight className="w-4 h-4 ml-1 transform group-hover:translate-x-1 transition-transform" />
               </div>
             </Link>
           ))}

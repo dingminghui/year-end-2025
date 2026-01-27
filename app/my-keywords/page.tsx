@@ -7,7 +7,7 @@ export default function KeywordsPage() {
     const keywords = [
         {
             title: "破壁者",
-            subtitle: "Wall Breaker",
+            subtitle: "坚韧 · 突破",
             icon: <Shield className="w-8 h-8 text-cyan-400" />,
             desc: "不惧烂代码与技术天坑。在武汉的高压封闭开发中，用极强的韧性与兜底能力杀出重围，化不可能为可能。",
             color: "border-cyan-500 shadow-cyan-500/50",
@@ -15,7 +15,7 @@ export default function KeywordsPage() {
         },
         {
             title: "智械同频",
-            subtitle: "Sync with AI",
+            subtitle: "人机 · 共生",
             icon: <Cpu className="w-8 h-8 text-purple-400" />,
             desc: "进化为“懂 AI 的工程师”。深度驾驭 MCP Skill，让 AI 成为外挂大脑，编码速度与思维同频，实现指数级加速。",
             color: "border-purple-500 shadow-purple-500/50",
@@ -23,7 +23,7 @@ export default function KeywordsPage() {
         },
         {
             title: "降维打击",
-            subtitle: "Dimensional Strike",
+            subtitle: "高维 · 俯瞰",
             icon: <Zap className="w-8 h-8 text-yellow-400" />,
             desc: "在极速节奏中保持冷静。利用 AI 快速拆解复杂需求，对技术难点进行降维打击，实现“抬手即代码”的心流状态。",
             color: "border-yellow-500 shadow-yellow-500/50",
@@ -31,7 +31,7 @@ export default function KeywordsPage() {
         },
         {
             title: "传火者",
-            subtitle: "Fire Keeper",
+            subtitle: "薪火 · 相传",
             icon: <Flame className="w-8 h-8 text-red-400" />,
             desc: "冲锋陷阵亦不忘转身传火。将高效开发模式与 AI 最佳实践传递给新人，点燃团队战斗力。",
             color: "border-red-500 shadow-red-500/50",
@@ -56,9 +56,9 @@ export default function KeywordsPage() {
                         transition={{ duration: 0.8 }}
                     >
                         <h1 className="text-4xl md:text-6xl font-extrabold tracking-tighter mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-white to-purple-400">
-                            2025: CODE &amp; CHAOS
+                            2025：代码与熵增
                         </h1>
-                        <p className="text-gray-400 text-lg uppercase tracking-[0.2em]">Frontend Developer Year-End Report</p>
+                        <p className="text-gray-400 text-lg uppercase tracking-[0.2em]">前端开发工程师年度效能报告</p>
                     </motion.div>
                 </header>
 
@@ -92,7 +92,7 @@ export default function KeywordsPage() {
 
                             {/* Decorative elements */}
                             <div className="absolute bottom-4 right-4 text-[10px] text-gray-700 font-mono">
-                                SYS.LOG.00{index + 1}
+                                系统日志.00{index + 1}
                             </div>
                         </motion.div>
                     ))}

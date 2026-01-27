@@ -8,35 +8,35 @@ export default function StoryPage() {
         {
             icon: <MapPin className="w-6 h-6" />,
             title: "坐标：武汉",
-            time: "2025.UNKNOWN",
+            time: "2025.未知",
             content: "不是樱花烂漫的季节，而是封闭开发的寒冬。为了那个传说中的“重点项目”，我们被空投到了这里。没人知道即将面对什么，只知道“必须交付”。",
             highlight: false,
         },
         {
             icon: <AlertTriangle className="w-6 h-6 text-red-500" />,
             title: "深坑开局",
-            time: "DAY 01",
+            time: "第 01 天",
             content: "代码拉下来的那一刻，心凉了半截。历史包袱重得像山，后端接口还在“薛定谔的状态”——文档仅供参考，报错全靠猜。这不是开发，这是考古加排雷。",
             highlight: true,
         },
         {
             icon: <Clock className="w-6 h-6" />,
             title: "极限生存",
-            time: "DAY 07",
+            time: "第 07 天",
             content: "生理时钟彻底紊乱。“抬起手就是写代码，张嘴就是吃饭，躺着就是睡觉。” 甚至梦里都在此时调试 undefined 的报错。睁眼闭眼，只有屏幕的幽光。",
             highlight: false,
         },
         {
             icon: <Code className="w-6 h-6 text-cyan-400" />,
             title: "觉醒时刻",
-            time: "BREAKING POINT",
+            time: "关键节点",
             content: "抱怨没有意义。愤怒过后，我进入了一种奇怪的平静——“自动驾驶模式”。既然队友靠不住，那就自己兜底。用 Mock 数据隔离依赖，用 AI 快速生成类型定义，每一个字符都是对混乱的反击。",
             highlight: true,
         },
         {
             icon: <CheckCircle className="w-6 h-6 text-green-500" />,
             title: "突围成功",
-            time: "DAY 30",
+            time: "第 30 天",
             content: "上线的那一刻，看着平稳运行的监控大盘，没有狂喜，只有一种虚脱后的释然。这不是一个人的胜利，是意志力对混乱的胜利。我们从泥潭里，跳出了一支舞。",
             highlight: false,
         },
@@ -56,11 +56,11 @@ export default function StoryPage() {
                     transition={{ duration: 1.2 }}
                     className="relative z-10 text-center px-4"
                 >
-                    <div className="text-red-600 font-mono text-sm tracking-[0.3em] mb-4">CONFIDENTIAL // YEAR 2025</div>
+                    <div className="text-red-600 font-mono text-sm tracking-[0.3em] mb-4">绝密档案 // 2025</div>
                     <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-white mb-6 uppercase">
                         武汉<br />突围战
                     </h1>
-                    <p className="text-neutral-500 text-lg max-w-lg mx-auto">代码与意志的较量</p>
+                    <p className="text-neutral-500 text-lg max-w-lg mx-auto">一场代码与意志的较量</p>
                 </motion.div>
             </header>
 
@@ -82,7 +82,7 @@ export default function StoryPage() {
                         </div>
 
                         {/* Content */}
-                        <div className={`pl-16 md:pl-0 md:w-1/2 ${index % 2 === 0 ? 'md:pr-16 text-left md:text-right' : 'md:pl-16 text-left'}`}>
+                        <div className={`pl-16 md:pl-0 md:w-1/2 ${index % 2 === 0 ? 'md:pl-20 md:text-left' : 'md:pr-20 md:text-right'}`}>
                             <div className="font-mono text-xs text-red-500 mb-2">{scene.time}</div>
                             <h3 className={`text-2xl font-bold mb-3 ${scene.highlight ? 'text-white' : 'text-neutral-400'}`}>
                                 {scene.title}
