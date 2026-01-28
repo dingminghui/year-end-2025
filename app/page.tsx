@@ -1,28 +1,28 @@
 import Link from "next/link";
-import { User, BookOpen, Lightbulb, ArrowRight } from "lucide-react";
+import { User, BookOpen, Lightbulb, ArrowRight, Layout } from "lucide-react";
 
 export default function Home() {
   const links = [
     {
       href: "/my-keywords",
-      title: "关于我：四维密码",
-      desc: "2025 核心关键词与年度格言",
+      title: "关于我：务实与进化",
+      desc: "2025 年度关键词与工作回顾",
       icon: <User className="w-6 h-6" />,
       color: "bg-cyan-500",
       gradient: "from-cyan-500 to-blue-600",
     },
     {
       href: "/my-story",
-      title: "年度时刻：武汉突围",
-      desc: "一段关于代码、意志与填坑的故事",
+      title: "重点项目：扬子江复盘",
+      desc: "从挑战到交付的思考与总结",
       icon: <BookOpen className="w-6 h-6" />,
       color: "bg-red-500",
       gradient: "from-red-500 to-orange-600",
     },
     {
       href: "/my-solution",
-      title: "困惑解法：AI 守门员",
-      desc: "针对后端交付质量的破局之道",
+      title: "提案：流程规范化",
+      desc: "前后端协作痛点改进建议",
       icon: <Lightbulb className="w-6 h-6" />,
       color: "bg-purple-500",
       gradient: "from-purple-500 to-indigo-600",
@@ -33,10 +33,10 @@ export default function Home() {
     <div className="min-h-screen bg-neutral-50 flex items-center justify-center p-6">
       <div className="max-w-4xl w-full">
         <header className="mb-12 text-center">
-          <h1 className="text-4xl font-black text-neutral-900 mb-4 tracking-tight">
+          <h1 className="text-3xl md:text-4xl font-black text-neutral-900 mb-4 tracking-tight">
             2025 年度总结报告
           </h1>
-          <p className="text-neutral-500 text-lg">
+          <p className="text-neutral-500 text-base md:text-lg">
             前端开发工程师复盘 // 丁明辉
           </p>
         </header>

@@ -1,43 +1,36 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Clock, MapPin, Coffee, Code, AlertTriangle, CheckCircle } from "lucide-react";
+import { Clock, MapPin, Coffee, Code, AlertTriangle, CheckCircle, FileText, Users, Eye, Anchor } from "lucide-react";
 
 export default function StoryPage() {
     const scenes = [
         {
-            icon: <MapPin className="w-6 h-6" />,
-            title: "坐标：武汉",
-            time: "2025.未知",
-            content: "不是樱花烂漫的季节，而是封闭开发的寒冬。为了那个传说中的“重点项目”，我们被空投到了这里。没人知道即将面对什么，只知道“必须交付”。",
+            icon: <Users className="w-6 h-6 text-red-500" />,
+            title: "第一次带人",
+            time: "扬子江项目 · 初期",
+            content: "在带教扬子江项目时，我最初认为管理就是“下发任务”。以为只要把指令传达到位，就可以等待成果产出。这是我作为管理者的第一个思维盲区。",
             highlight: false,
         },
         {
-            icon: <AlertTriangle className="w-6 h-6 text-red-500" />,
-            title: "深坑开局",
-            time: "第 01 天",
-            content: "代码拉下来的那一刻，心凉了半截。历史包袱重得像山，后端接口还在“薛定谔的状态”——文档仅供参考，报错全靠猜。这不是开发，这是考古加排雷。",
+            icon: <AlertTriangle className="w-6 h-6 text-yellow-500" />,
+            title: "逻辑崩塌与被掩埋",
+            time: "发展阶段",
+            content: "由于缺乏对执行层思维逻辑的深度同步，成员的理解偏差导致开发质量严重不达标。大量逻辑漏洞被掩埋在前端表现层之下，导致流程受阻，甚至危及项目正常发版。",
             highlight: true,
         },
         {
-            icon: <Clock className="w-6 h-6" />,
-            title: "极限生存",
-            time: "第 07 天",
-            content: "生理时钟彻底紊乱。“抬起手就是写代码，张嘴就是吃饭，躺着就是睡觉。” 甚至梦里都在此时调试 undefined 的报错。睁眼闭眼，只有屏幕的幽光。",
-            highlight: false,
-        },
-        {
-            icon: <Code className="w-6 h-6 text-cyan-400" />,
-            title: "觉醒时刻",
-            time: "关键节点",
-            content: "抱怨没有意义。愤怒过后，我进入了一种奇怪的平静——“自动驾驶模式”。既然队友靠不住，那就自己兜底。用 Mock 数据隔离依赖，用 AI 快速生成类型定义，每一个字符都是对混乱的反击。",
+            icon: <Eye className="w-6 h-6 text-cyan-400" />,
+            title: "开启逻辑穿透",
+            time: "转折时刻",
+            content: "我立即调整策略，由单纯的任务派发转为深度“逻辑复盘”。我开始透视每一行代码背后的思考路径，在思维层面上与团队达成高度对齐，消弭信息差。",
             highlight: true,
         },
         {
-            icon: <CheckCircle className="w-6 h-6 text-green-500" />,
-            title: "突围成功",
-            time: "第 30 天",
-            content: "上线的那一刻，看着平稳运行的监控大盘，没有狂喜，只有一种虚脱后的释然。这不是一个人的胜利，是意志力对混乱的胜利。我们从泥潭里，跳出了一支舞。",
+            icon: <Anchor className="w-6 h-6 text-green-500" />,
+            title: "“悲观者永远正确”",
+            time: "深刻领悟",
+            content: "这次经历让我明白，管理不仅是知道他们在做什么，更要透视他们的思维逻辑。正如那句话所说：“悲观者永远正确”。只有基于深度验证而非盲目乐观，才能确保交付结果的稳固。",
             highlight: false,
         },
     ];
@@ -46,7 +39,7 @@ export default function StoryPage() {
         <div className="min-h-screen bg-neutral-950 text-neutral-200 font-sans selection:bg-red-900/50 pb-32">
             <div className="fixed top-0 left-0 w-full h-1 bg-gradient-to-r from-red-600 to-black z-50"></div>
 
-            <header className="h-[60vh] flex flex-col items-center justify-center relative overflow-hidden">
+            <header id="highlights" className="h-[50vh] md:h-[60vh] flex flex-col items-center justify-center relative overflow-hidden">
                 <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1516110833967-0b5716ca1387?q=80&w=2574&auto=format&fit=crop')] bg-cover bg-center opacity-10 grayscale"></div>
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-neutral-950/80 to-neutral-950"></div>
 
@@ -56,11 +49,11 @@ export default function StoryPage() {
                     transition={{ duration: 1.2 }}
                     className="relative z-10 text-center px-4"
                 >
-                    <div className="text-red-600 font-mono text-sm tracking-[0.3em] mb-4">绝密档案 // 2025</div>
-                    <h1 className="text-5xl md:text-8xl font-black tracking-tighter text-white mb-6 uppercase">
-                        武汉<br />突围战
+                    <div className="text-red-600 font-mono text-sm tracking-[0.3em] mb-4">LEADER LOG // 2025</div>
+                    <h1 className="text-4xl md:text-8xl font-black tracking-tighter text-white mb-6 uppercase text-center">
+                        扬子江<br />项目复盘
                     </h1>
-                    <p className="text-neutral-500 text-lg max-w-lg mx-auto">一场代码与意志的较量</p>
+                    <p className="text-neutral-500 text-lg max-w-lg mx-auto">从“指令分发”到“深度护航”的转变</p>
                 </motion.div>
             </header>
 
@@ -74,15 +67,13 @@ export default function StoryPage() {
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true, margin: "-100px" }}
                         transition={{ duration: 0.6 }}
-                        className={`relative mb-24 flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : ''} gap-8 md:gap-0 items-start md:items-center`}
+                        className={`relative mb-16 md:mb-24 flex flex-col md:flex-row ${index % 2 === 0 ? 'md:flex-row-reverse' : ''} gap-4 md:gap-0 items-start md:items-center`}
                     >
-                        {/* Time/Icon Marker */}
                         <div className="absolute left-6 md:left-[50%] transform -translate-x-1/2 md:-translate-x-1/2 top-0 md:top-auto flex items-center justify-center w-8 h-8 rounded-full bg-neutral-900 border border-neutral-700 z-10">
                             {scene.icon}
                         </div>
 
-                        {/* Content */}
-                        <div className={`pl-16 md:pl-0 md:w-1/2 ${index % 2 === 0 ? 'md:pl-20 md:text-left' : 'md:pr-20 md:text-right'}`}>
+                        <div className={`pl-16 md:pl-0 md:w-1/2 ${index % 2 === 0 ? 'md:pl-20 md:text-left' : 'md:pr-20 md:text-right'} w-full`}>
                             <div className="font-mono text-xs text-red-500 mb-2">{scene.time}</div>
                             <h3 className={`text-2xl font-bold mb-3 ${scene.highlight ? 'text-white' : 'text-neutral-400'}`}>
                                 {scene.title}
@@ -100,9 +91,9 @@ export default function StoryPage() {
                     viewport={{ once: true }}
                     className="text-center py-20 relative z-10 bg-neutral-900/50 rounded-2xl border border-neutral-800 p-8 backdrop-blur sm:mx-10"
                 >
-                    <h4 className="text-xl text-neutral-300 font-bold mb-4">RE: 思考</h4>
+                    <h4 className="text-xl text-neutral-300 font-bold mb-4">RE: 管理思考</h4>
                     <p className="text-neutral-400">
-                        “与其抱怨环境，不如锻炼自己在泥潭中跳舞的能力。但明年，我们一定要把舞台修好。”
+                        “永远不要相信自己的判断是正确的。开发任务不是布置下去就结束了，而是你要真正知道他们在做什么，他们的思维逻辑是什么。”
                     </p>
                 </motion.div>
             </div>

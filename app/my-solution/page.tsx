@@ -1,11 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { XCircle, CheckCircle, ArrowRight, Server, ShieldCheck, FileWarning, GitMerge } from "lucide-react";
+import { XCircle, CheckCircle, ArrowRight, Server, ShieldCheck, FileWarning, GitMerge, Users } from "lucide-react";
 
 export default function SolutionPage() {
     return (
-        <div className="min-h-screen bg-slate-50 text-slate-900 font-sans p-6 md:p-12 flex flex-col items-center justify-center">
+        <div className="min-h-screen bg-slate-50 text-slate-900 font-sans p-4 md:p-12 flex flex-col items-center justify-center">
             <header className="mb-12 text-center max-w-2xl mx-auto">
                 <motion.div
                     initial={{ opacity: 0, y: -20 }}
@@ -13,13 +13,13 @@ export default function SolutionPage() {
                     transition={{ duration: 0.6 }}
                 >
                     <span className="inline-block py-1 px-3 rounded-full bg-slate-200 text-slate-600 text-xs font-bold uppercase tracking-wider mb-4">
-                        复盘与展望 2025 &rarr; 2026
+                        思考与展望 2025 &rarr; 2026
                     </span>
                     <h1 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">
-                        从“无序”到“契约”
+                        从“无序”到“规范”
                     </h1>
                     <p className="text-slate-600 text-lg">
-                        针对前后端协作痛点的复盘与提案
+                        协作痛点复盘与改进提案
                     </p>
                 </motion.div>
             </header>
@@ -36,26 +36,26 @@ export default function SolutionPage() {
                     <div className="relative z-10">
                         <div className="flex items-center gap-3 mb-6 text-red-500">
                             <FileWarning className="w-8 h-8" />
-                            <h2 className="text-2xl font-bold">2025 之惑</h2>
+                            <h2 className="text-2xl font-bold">当前的痛点</h2>
                         </div>
 
-                        <h3 className="text-3xl font-bold text-slate-800 mb-4">后端交付是个“黑盒”</h3>
+                        <h3 className="text-3xl font-bold text-slate-800 mb-4">接口交付标准不统一</h3>
                         <p className="text-slate-500 leading-relaxed mb-8">
-                            接口文档常年“仅供参考”，字段定义随心情变更。前端工程师被迫沦为“数据清洗工”和“逻辑兜底人”，消耗大量精力在防御性编程上，而非业务价值创造。
+                            文档维护力度不足，常出现文档与代码不一致。前端需花费大量精力确认字段和防御性编码，影响整体交付效率。
                         </p>
 
                         <ul className="space-y-3">
                             <li className="flex items-center gap-2 text-slate-600">
                                 <XCircle className="w-5 h-5 text-red-400" />
-                                <span>文档与代码不一致</span>
+                                <span>文档定义滞后，依赖口头沟通</span>
                             </li>
                             <li className="flex items-center gap-2 text-slate-600">
                                 <XCircle className="w-5 h-5 text-red-400" />
-                                <span>无通知的 Breaking Change</span>
+                                <span>变更缺乏通知机制，联调成本高</span>
                             </li>
                             <li className="flex items-center gap-2 text-slate-600">
                                 <XCircle className="w-5 h-5 text-red-400" />
-                                <span>联调成本极高</span>
+                                <span>重复的数据清洗工作</span>
                             </li>
                         </ul>
                     </div>
@@ -80,9 +80,9 @@ export default function SolutionPage() {
                             <h2 className="text-2xl font-bold">2026 之解</h2>
                         </div>
 
-                        <h3 className="text-3xl font-bold text-white mb-4">AI 契约守门员</h3>
+                        <h3 className="text-3xl font-bold text-white mb-4">引入自动化契约测试</h3>
                         <p className="text-slate-300 leading-relaxed mb-8">
-                            拒绝人治，走向智治。引入 AI 作为流水线的“守门员”，强制执行契约测试。让工具的冷酷来弥补人性的懒惰，确保交付质量。
+                            通过工具化手段保障“文档即代码”。建立流程卡点，确保接口变更可被感知、可被校验，降低沟通成本。
                         </p>
 
                         <ul className="space-y-4">
@@ -91,17 +91,17 @@ export default function SolutionPage() {
                                     <Server className="w-5 h-5" />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-slate-100">自动化原本 (Single Source)</h4>
-                                    <p className="text-sm text-slate-400">强制 Swagger/YAPI 为唯一真理，代码自动生成。</p>
+                                    <h4 className="font-bold text-slate-100">自动化原本 (单一信源)</h4>
+                                    <p className="text-sm text-slate-400">强制 Swagger/Apifox 为唯一真理，代码自动生成。</p>
                                 </div>
                             </li>
                             <li className="flex items-start gap-3">
                                 <div className="p-2 bg-purple-500/20 rounded-lg text-purple-400 mt-1">
-                                    <GitMerge className="w-5 h-5" />
+                                    <Users className="w-5 h-5" />
                                 </div>
                                 <div>
-                                    <h4 className="font-bold text-slate-100">流水线卡点 (CI Gatekeeper)</h4>
-                                    <p className="text-sm text-slate-400">CI 阶段 AI 自动比对变更，发现 Breaking Change 阻断合并。</p>
+                                    <h4 className="font-bold text-slate-100">思维同步 (逻辑护航)</h4>
+                                    <p className="text-sm text-slate-400">在开发初期进行深度的逻辑对齐，确保代码实现与业务需求高度一致。</p>
                                 </div>
                             </li>
                         </ul>
